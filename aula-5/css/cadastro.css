@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(204, 203, 203);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h1{
+    color: red;
+    font-size: 30px;
+}
+label{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+.box{
+    width: 400px;
+    padding: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:  #191919;
+    text-align: center;
+ }
+ select{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 7px auto; 
+    text-align: center;
+    border: 2px solid red;
+    padding: 16px  10px;
+    width: 280px;
+    outline: none;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transition: 0,25s;
+ }
+optgroup{
+    color: black;
+}
+option{
+    color: black;
+}
+input[type="text"], input[type="date"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 7px auto; 
+    text-align: center;
+    border: 2px solid red;
+    padding: 16px  10px;
+    width: 280px;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+    transition: 0,25s;
+}
+input[type="text"]:focus{
+    width: 300px;
+    border-color: #00f134;
+    background-color: none;
+}
+input[type="date"]:focus{
+    width: 300px;
+    border-color: #00f134;
+}
+select:focus{
+    width: 300px;
+    border-color: #00f134;
+}
+input[type="submit"]{
+    border: 0;
+    background-color:  #00f134;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #33993b;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor:pointer
+}

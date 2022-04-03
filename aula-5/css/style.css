@@ -1,0 +1,24 @@
+body{
+    background-color: #bdbaba;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+input[type="text"]{
+    color: black;
+    border-color: black;
+    border-style: initial;
+}
+input[type="submit"]{
+    color: green;
+    border-radius: 5px;
+    border: none;
+    width: 80px;
+    height: 35px;
+}
+input[type="submit"]:hover{
+    color: white ;
+    background-color: green;
+    width: 85px;
+    height: 38px;
+}
