@@ -1,0 +1,112 @@
+body{
+    background-color: #022859;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: white;
+    border-radius: 10px;
+}
+#menu{
+    width: 100%;
+}
+.formu{
+    font-size: 125%;
+    margin-top: 2.5%;
+    background-color: white;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 0;
+    margin-left: 15%;
+    margin-right: 15%;
+    list-style-position: outside;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.5);
+}
+.formu input[type="text"]{
+    border-color: #022859;
+    display: inline;
+    margin: 1% auto; 
+    border: 1% solid #993399;;
+    padding: 1%  2%;
+    width: 25%;
+    outline: 0.8% #3498db;
+    border-radius: 20px;
+    transition: 0,25s;
+}
+.formu input[type="text"]:focus{
+    border-color: #F21628;
+}
+.formu input[type="radio"]{
+    display: inline;
+}
+.if_curso{
+    font-size: 80%;
+    text-align: justify;
+    display: flex;
+    margin-top: 0px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    background-color: whitesmoke;
+    border-color: black;
+    border-radius: 14px;
+    display: inline-block;
+}
+.botao{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    font-size: 1em;
+    padding: 1.8% 3%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    appearance: none;
+    background-color: #F21628;
+    color: black;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 25px rgba(255, 0, 0, 0.5);
+}
+.botao:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    font-size: 1em;
+    padding: 2% 4%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    appearance: none;
+    background-color: #F21628;
+    color: black;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 25px rgba(255, 0, 0, 0.5);
+}
+#rodape{
+    background-color: rgb(107, 107, 107);
+    text-align: center;
+    width: 102.3%;
+    height: 20%;
+    bottom: 0;
+    margin-left: -1.7%;
+    margin-top: 2%;
+}
+.foto{
+    width: 30%;
+    height: 30%;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: white;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(179, 174, 174);
+    border-radius: 30px;
+}

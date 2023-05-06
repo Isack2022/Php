@@ -1,0 +1,38 @@
+CREATE DATABASE bdIdentCurso;
+use bdIdentCurso;
+CREATE TABLE tbCurso(
+    idCurso int(3) PRIMARY KEY AUTO_INCREMENT,
+    curso varchar(60)
+)DEFAULT charset=utf8;
+CREATE TABLE tbIdentificacao(
+    idIdentifiq int(3) PRIMARY KEY AUTO_INCREMENT,
+    idCurso int(3),
+    nome varchar(300),
+    FOREIGN KEY (idCurso) REFERENCES tbcurso(idCurso)
+)DEFAULT charset=utf8;
+
+INSERT INTO `tbcurso`(`idCurso`, `curso`) VALUES (null, 'Admistração');
+INSERT INTO `tbcurso`(`idCurso`, `curso`) VALUES (null, 'Contabilidade');
+INSERT INTO `tbcurso`(`idCurso`, `curso`) VALUES (null, 'Desenvolvimento de Sistema');
+INSERT INTO `tbcurso`(`idCurso`, `curso`) VALUES (null, 'Eventos');
+INSERT INTO `tbcurso`(`idCurso`, `curso`) VALUES (null, 'Finanças');
+INSERT INTO `tbcurso`(`idCurso`, `curso`) VALUES (null, 'Gastronomia');
+INSERT INTO `tbcurso`(`idCurso`, `curso`) VALUES (null, 'Guia de turismo');
+INSERT INTO `tbcurso`(`idCurso`, `curso`) VALUES (null, 'Marketing');
+INSERT INTO `tbcurso`(`idCurso`, `curso`) VALUES (null, 'Nutrição');
+INSERT INTO `tbcurso`(`idCurso`, `curso`) VALUES (null, 'Serviços Públicos');
+INSERT INTO `tbcurso`(`idCurso`, `curso`) VALUES (null, 'Nenhum');
+
+select tbidentificacao.idIdentifiq, tbcurso.curso from tbidentificacao
+inner join tbcurso
+on tbidentificacao.idCurso = tbcurso.idCurso
+
+
+select i.idIdentifiq, c.curso from tbidentificacao i
+inner join tbcurso c 
+on i.idCurso = c.idCurso
+
+select c.curso,count(i.idCurso) from tbidentificacao i
+inner join tbcurso c 
+on i.idCurso = c.idCurso
+group by c.curso

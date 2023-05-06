@@ -4,7 +4,13 @@ body{
     text-align: center;
 }
 h1{
-    color: red;
+    color: white;
+    background-color: red;
+    height: 8%;
+    width: 100%;
+    padding: 0px;
+    margin-top: -10px;
+    margin-left: -5px;
     font-size: 30px;
 }
 label{
@@ -70,7 +76,7 @@ select:focus{
 }
 input[type="submit"]{
     border: 0;
-    background-color:  #00f134;
+    background-color:  #33993b;
     display: block;
     margin: 20px auto;
     text-align: center;
